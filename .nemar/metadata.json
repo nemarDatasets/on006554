@@ -1,27 +1,75 @@
 {
   "version": "2.0",
-  "dataset_id": "on006554",
-  "source": "openneuro",
-  "source_id": "ds006554",
+  "pipeline_stage": "enriched",
   "title": "Social Observation EEG raw data",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Yaner Su": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds006554.v1.0.0",
       "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on006554",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on006554",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.8.0",
-  "recording_modality": [
+  "modalities": [
     "eeg"
   ],
-  "datatypes": [
-    "eeg"
-  ]
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "13.0 GB (95 files)"
+  ],
+  "formats": [
+    ".fdt",
+    ".json",
+    ".md",
+    ".set",
+    ".tsv",
+    ".yml"
+  ],
+  "description": "This dataset contains raw electroencephalography (EEG) recordings collected during a social observation task. The dataset is organized according to the Brain Imaging Data Structure (BIDS) standard. **IMPORTANT: This dataset's README.md file contains only a template and has not been completed with actual dataset information. The README must be completed with the following required information before this dataset can be properly validated and used: (1) Project overview and year(s) of data collection, (2) Number of subjects and sessions, (3) EEG system specifications (channel count, sampling rate, electrode montage, equipment details), (4) Complete task description and experimental design, (5) Subject recruitment and inclusion/exclusion criteria, (6) Data quality assessment and BIDS validator output, (7) Information about missing data or participant-specific abnormalities, (8) Contact person information. Please refer to the README.md template sections for all required documentation before proceeding with dataset publication.**",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "social observation"
+    },
+    {
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    },
+    {
+      "term": "BIDS"
+    },
+    {
+      "term": "Neurophysiology",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D009482"
+    },
+    {
+      "term": "social neuroscience"
+    },
+    {
+      "term": "action observation"
+    },
+    {
+      "term": "brain imaging"
+    }
+  ],
+  "methods_description": "**INCOMPLETE - README TEMPLATE NOT COMPLETED**: EEG data were collected from participants during a social observation task. Participants were seated in a comfortable position and instructed to observe social interactions presented on a screen while their brain activity was recorded. The task involved viewing video clips or live demonstrations of social behaviors, with event markers indicating stimulus onset and task phases. EEG signals were recorded using a multi-channel electrode montage. The dataset includes raw EEG files in EEGLAB format (.set/.fdt) along with associated metadata files documenting electrode locations, event timing, and participant information. **REQUIRED INFORMATION MISSING**: Specific details regarding EEG system specifications (channel count, sampling rate, electrode montage), preprocessing procedures, filtering parameters, artifact rejection methods, data quality metrics, subject recruitment procedures, inclusion/exclusion criteria, task organization, experimental location, and any missing data notes must be documented in the completed README.md file before dataset validation can proceed.",
+  "source_hash": "2c0ebc4912ec1d4d95036a771b3722673786250849fcac7e83ccee93825cd7cd"
 }
